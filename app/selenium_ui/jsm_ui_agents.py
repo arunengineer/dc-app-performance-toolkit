@@ -64,11 +64,6 @@ Add custom actions anywhere between login and log out action. Move this to a dif
 Write your custom selenium scripts in `app/extension/jsm/extension_ui_agents.py`.
 Refer to `app/selenium_ui/jsm/modules_agents.py` for examples.
 """
-def test_1_selenium_agent_custom_action(jsm_webdriver, jsm_datasets, jsm_screen_shots):
-    extension_ui_agents.app_specific_action(jsm_webdriver, jsm_datasets)
-
-def test_1_selenium_agent_custom_action_admp_create_user(jsm_webdriver, jsm_datasets, jsm_screen_shots):
-    extension_ui_agents.app_specific_action_admp_create_user(jsm_webdriver, jsm_datasets)
 
 def test_1_selenium_agent_custom_action_admp_configuration(jsm_webdriver, jsm_datasets, jsm_screen_shots):
     extension_ui_agents.app_specific_action_admp_configuration(jsm_webdriver, jsm_datasets)
@@ -82,6 +77,8 @@ def test_1_selenium_agent_custom_action_admp_associate_new(jsm_webdriver, jsm_da
 def test_1_selenium_agent_custom_action_admp_support(jsm_webdriver, jsm_datasets, jsm_screen_shots):
     extension_ui_agents.app_specific_action_admp_support(jsm_webdriver, jsm_datasets)
 
+def test_1_selenium_agent_custom_action_admp_actions(jsm_webdriver, jsm_datasets, jsm_screen_shots):
+    extension_ui_agents.app_specific_action_admp_actions(jsm_webdriver, jsm_datasets)
 """
 To enable specific tests for Insight below, set 'True' next to `insight` variable (False by default) in  `app/jsm.yml`
 """
